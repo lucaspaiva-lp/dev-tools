@@ -1,2 +1,0 @@
-- “Quero tudo em UM ÚNICO bloco `~~~md`, e códigos SQL dentro com ```sql.”
-- “Use fence externo `~~~md`. Não dividir blocos.”
