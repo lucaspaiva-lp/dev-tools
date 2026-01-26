@@ -181,14 +181,18 @@ This folder exists because **real databases are not abstract**.
 
 This repository exists to support **professional-grade reasoning**, not convenience shortcuts.
 
+---
+
 ## Contributing & Reuse
 
-This repository is intentionally structured as a learning-oriented and practical toolkit.
+This repository is provided for **academic, educational, and research purposes only**, as defined by the license.
 
-If you find parts of it useful:
+You are welcome to:
 
-- feel free to **fork** the repository,
-- adapt the structure or scripts to your own workflow,
-- or propose improvements via pull requests.
+- fork the repository for learning or study,
+- adapt its structure or scripts for personal, non-commercial experimentation,
+- suggest improvements or clarifications via pull requests.
 
-The goal is to encourage good engineering practices, clarity, and reuse — not to impose a fixed solution.
+Any use of this repository or its contents for **commercial purposes, paid work, proprietary systems, or revenue-generating activities is explicitly prohibited**.
+
+The intent of this project is knowledge sharing and technical growth, not the distribution of production-ready commercial tooling.
