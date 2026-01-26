@@ -1,4 +1,4 @@
-# dev-tools — Engineering Utilities & Operational Reference
+# Engineering Utilities & Operational Reference
 
 This repository contains **engineering support artifacts** used during development, debugging, data analysis, and database operations.
 
@@ -181,4 +181,14 @@ This folder exists because **real databases are not abstract**.
 
 This repository exists to support **professional-grade reasoning**, not convenience shortcuts.
 
-If something feels unclear, it likely belongs here.
+## Contributing & Reuse
+
+This repository is intentionally structured as a learning-oriented and practical toolkit.
+
+If you find parts of it useful:
+
+- feel free to **fork** the repository,
+- adapt the structure or scripts to your own workflow,
+- or propose improvements via pull requests.
+
+The goal is to encourage good engineering practices, clarity, and reuse — not to impose a fixed solution.
