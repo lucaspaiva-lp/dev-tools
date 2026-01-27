@@ -19,9 +19,9 @@ Characteristics:
 - **do not depend on the user**
 - **do not depend on flow**
 
-These rules **legitimately belong to the database (persistence layer)** .
+These rules **legitimately belong to the database (persistence layer)**.
 
-➡️ They are _business invariants_ , but **structural** , not behavioral.
+➡️ They are _business invariants_, but **structural**, not behavioral.
 
 ---
 
@@ -46,7 +46,7 @@ Characteristics:
 - **subject to policy changes**
 - **may differ by scenario**
 
-These **do not belong to the database** .
+These **do not belong to the database**.
 
 ➡️ They belong to the **application layer** (Service Layer).
 
@@ -70,7 +70,7 @@ The application:
 
 Yes — this is a business rule.
 
-But it is a **structural, invariant rule** .
+But it is a **structural, invariant rule**.
 
 Therefore:
 

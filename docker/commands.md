@@ -12,7 +12,7 @@
 
 - `docker images` → list local images
 - `docker pull <image>` → download image
-- `docker build -t <name>:<tag> .` → build image
+- `docker build -t <name>:<tag>.` → build image
 - `docker rmi <image>` → remove image
 - `docker image prune` → remove unused images
 

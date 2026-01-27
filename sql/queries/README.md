@@ -1,8 +1,8 @@
 ## Executing SQL files from `queries/`
 
-Files inside `queries/` are **read-only inspection scripts** .
+Files inside `queries/` are **read-only inspection scripts**.
 
-They are meant to **observe, validate, and debug data** , not to change it.
+They are meant to **observe, validate, and debug data**, not to change it.
 
 They are executed using the PostgreSQL CLI tool: `psql`.
 
@@ -44,7 +44,7 @@ This command:
 
 - Queries run **top to bottom**
 - No state is persisted after execution
-- Results are **printed** , not stored
+- Results are **printed**, not stored
 - Nothing changes unless the SQL file contains mutating commands
 
 ---
@@ -58,4 +58,4 @@ Use these files to:
 - check aggregates and totals (`aggregates.sql`)
 - debug inconsistencies (`debugging.sql`)
 
-They are **safe to run repeatedly** and **safe in production** _if they contain only SELECTs_ .
+They are **safe to run repeatedly** and **safe in production** _if they contain only SELECTs_.

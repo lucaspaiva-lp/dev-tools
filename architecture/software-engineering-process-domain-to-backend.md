@@ -1,8 +1,8 @@
 # Software Engineering Process — From Domain Conception to Implementation
 
-This document describes, in a cohesive and technical manner, the  **classical software engineering workflow** , applied to **domain-oriented backend systems** built on  **relational databases** .
+This document describes, in a cohesive and technical manner, the **classical software engineering workflow**, applied to **domain-oriented backend systems** built on **relational databases**.
 
-The process is  **not linear** , but iterative and incremental.
+The process is **not linear**, but iterative and incremental.
 
 Even so, there is a **healthy order** that reduces rework, inconsistency, and fragile decisions.
 
@@ -16,35 +16,35 @@ Even so, there is a **healthy order** that reduces rework, inconsistency, and fr
 
 ### 1. Domain Analysis
 
- **Objective** : understand the problem before any technical solution.
+**Objective** : understand the problem before any technical solution.
 
 Core questions:
 
-* What problem is being solved?
-* Which entities exist in the domain?
-* Which rules are real and invariant?
+- What problem is being solved?
+- Which entities exist in the domain?
+- Which rules are real and invariant?
 
 Expected outcome:
 
-* Clear domain understanding
-* Consistent vocabulary
-* Explicit rules
+- Clear domain understanding
+- Consistent vocabulary
+- Explicit rules
 
 ---
 
 ### 2. Domain Review
 
- **Objective** : validate whether the domain understanding is coherent.
+**Objective** : validate whether the domain understanding is coherent.
 
 Activities:
 
-* Identify conceptual inconsistencies
-* Make implicit rules explicit
-* Adjust scope
+- Identify conceptual inconsistencies
+- Make implicit rules explicit
+- Adjust scope
 
 Expected outcome:
 
-* Conceptually stable domain
+- Conceptually stable domain
 
 ---
 
@@ -52,39 +52,39 @@ Expected outcome:
 
 ### 3. Conceptual Model / Domain Model
 
- **Objective** : represent the domain  **without concern for technology** .
+**Objective** : represent the domain **without concern for technology**.
 
- **Common forms** :
+**Common forms** :
 
-* Entity–Relationship Diagram (ER)
-* Textual conceptual model
-* Partial UML (only relevant entities and relationships)
+- Entity–Relationship Diagram (ER)
+- Textual conceptual model
+- Partial UML (only relevant entities and relationships)
 
- **Notes** :
+  **Notes** :
 
-* Not full UML
-* Not implementation
-* Used for reasoning and validation
+- Not full UML
+- Not implementation
+- Used for reasoning and validation
 
- **Expected outcome** :
+  **Expected outcome** :
 
-* A model that represents the real-world problem domain
+- A model that represents the real-world problem domain
 
 ---
 
 ### 4. Model Validation
 
- **Objective** : ensure the conceptual model accurately represents the domain.
+**Objective** : ensure the conceptual model accurately represents the domain.
 
 Key questions:
 
-* Do the entities make sense?
-* Are the relationships real?
-* Are dependencies mandatory or optional?
+- Do the entities make sense?
+- Are the relationships real?
+- Are dependencies mandatory or optional?
 
 Expected outcome:
 
-* Validated conceptual model
+- Validated conceptual model
 
 ---
 
@@ -92,56 +92,56 @@ Expected outcome:
 
 ### 5. Logical Model → Physical Model
 
- **Objective** : transform the conceptual model into a database implementation.
+**Objective** : transform the conceptual model into a database implementation.
 
 Activities:
 
-* Table definitions
-* Primary keys (PK)
-* Foreign keys (FK)
-* Constraints (`NOT NULL`, `UNIQUE`, etc.)
+- Table definitions
+- Primary keys (PK)
+- Foreign keys (FK)
+- Constraints (`NOT NULL`, `UNIQUE`, etc.)
 
 Expected outcome:
 
-* SQL schema consistent with the domain
+- SQL schema consistent with the domain
 
 ---
 
 ### 6. Schema Validation
 
- **Objective** : prove that the database functions as a technical contract.
+**Objective** : prove that the database functions as a technical contract.
 
 Activities:
 
-* Invalid insert attempts
-* Constraint violation tests
-* Practical confirmation of integrity
+- Invalid insert attempts
+- Constraint violation tests
+- Practical confirmation of integrity
 
 Expected outcome:
 
-* Database actively preventing invalid states
+- Database actively preventing invalid states
 
 ---
 
 ### 7. Database as Technical Contract — Documentation
 
- **Objective** : explain **why** the database was modeled the way it was.
+**Objective** : explain **why** the database was modeled the way it was.
 
 Typical content:
 
-* Constraint justification
-* Rules enforced by the database vs. the application
-* Modeling trade-offs
+- Constraint justification
+- Rules enforced by the database vs. the application
+- Modeling trade-offs
 
 Expected outcome:
 
-* Clear, defensible technical documentation
+- Clear, defensible technical documentation
 
 ---
 
 ## Transition Point
 
-Up to this point, the work is primarily  **definition and design** .
+Up to this point, the work is primarily **definition and design**.
 
 From here onward, **software implementation** begins.
 
@@ -151,111 +151,111 @@ From here onward, **software implementation** begins.
 
 ### 8. Backend Infrastructure and Project Setup
 
- **Objective** : prepare the technical foundation for backend implementation.
+**Objective** : prepare the technical foundation for backend implementation.
 
-This phase establishes the  **operational base of the code** , ensuring the project is:
+This phase establishes the **operational base of the code**, ensuring the project is:
 
-* reproducible
-* organized
-* evolvable
-* compatible with modern tooling
+- reproducible
+- organized
+- evolvable
+- compatible with modern tooling
 
- **Responsibilities** :
+  **Responsibilities** :
 
-* Creation of isolated virtual environment (`.venv`)
-* Dependency and packaging definition (`pyproject.toml`)
-* Adoption of `src` layout
-* Layer organization:
-  * `domain`
-  * `repositories`
-  * `services`
-  * `controllers`
-  * `database`
-* Explicit Python packages (`__init__.py`)
-* Correct import and namespace configuration
+- Creation of isolated virtual environment (`.venv`)
+- Dependency and packaging definition (`pyproject.toml`)
+- Adoption of `src` layout
+- Layer organization:
+  - `domain`
+  - `repositories`
+  - `services`
+  - `controllers`
+  - `database`
+- Explicit Python packages (`__init__.py`)
+- Correct import and namespace configuration
 
- **Must not contain** :
+  **Must not contain** :
 
-* Business rules
-* Domain logic
-* SQL or queries
-* HTTP endpoints
+- Business rules
+- Domain logic
+- SQL or queries
+- HTTP endpoints
 
- **Expected outcome** :
+  **Expected outcome** :
 
-* Installable project (`pip install .`)
-* Predictable and stable imports
-* Solid base for backend evolution
-* Clear separation between infrastructure and business logic
+- Installable project (`pip install.`)
+- Predictable and stable imports
+- Solid base for backend evolution
+- Clear separation between infrastructure and business logic
 
 ---
 
 ### 9. Domain Layer Implementation
 
- **Objective** : reflect the data model in code.
+**Objective** : reflect the data model in code.
 
- **Responsibilities** :
+**Responsibilities** :
 
-* Domain models (e.g., SQLAlchemy)
-* Relationships
-* Types and structures
+- Domain models (e.g., SQLAlchemy)
+- Relationships
+- Types and structures
 
- **Must not contain** :
+  **Must not contain** :
 
-* Business rules
-* Flow logic
+- Business rules
+- Flow logic
 
 ---
 
 ### 10. Repository Layer
 
- **Objective** : isolate data persistence.
+**Objective** : isolate data persistence.
 
- **Responsibilities** :
+**Responsibilities** :
 
-* CRUD operations
-* Queries
-* Database communication
+- CRUD operations
+- Queries
+- Database communication
 
- **Must not contain** :
+  **Must not contain** :
 
-* Business rules
-* Domain decisions
+- Business rules
+- Domain decisions
 
 ---
 
 ### 11. Service Layer
 
- **Objective** : centralize system logic.
+**Objective** : centralize system logic.
 
- **Responsibilities** :
+**Responsibilities** :
 
-* Business flows
-* Validations that do not belong to the database
-* Orchestration across repositories
+- Business flows
+- Validations that do not belong to the database
+- Orchestration across repositories
 
- **Must not contain** :
+  **Must not contain** :
 
-* HTTP concerns
-* Direct database access
+- HTTP concerns
+- Direct database access
 
 ---
 
 ### 12. Controller / API Layer
 
- **Objective** : expose the system to the outside world.
+**Objective** : expose the system to the outside world.
 
- **Responsibilities** :
+**Responsibilities** :
 
-* HTTP endpoints
-* Input validation
-* Response codes
-* API documentation (Swagger / OpenAPI)
+- HTTP endpoints
+- Input validation
+- Response codes
+- API documentation (Swagger / OpenAPI)
 
- **Must not contain** :
+  **Must not contain** :
 
-* Business rules
-* Direct database access
+- Business rules
+- Direct database access
 
 ---
 
@@ -263,23 +263,23 @@ This phase establishes the  **operational base of the code** , ensuring the proj
 
 ### 13. Automated Testing
 
- **Objective** : protect system behavior over time.
+**Objective** : protect system behavior over time.
 
 Common types:
 
-* Unit tests
-* Integration tests
+- Unit tests
+- Integration tests
 
 Expected outcome:
 
-* Confidence during evolution
-* Reduced regressions
+- Confidence during evolution
+- Reduced regressions
 
 ---
 
 ## Summary
 
-This workflow represents a  **domain-oriented approach** , with the database acting as a  **technical contract** , and the backend built with  **clear separation of responsibilities** .
+This workflow represents a **domain-oriented approach**, with the database acting as a **technical contract**, and the backend built with **clear separation of responsibilities**.
 
 The proposed order reduces rework, increases architectural coherence, and facilitates long-term evolution.
 
@@ -289,24 +289,30 @@ The proposed order reduces rework, increases architectural coherence, and facili
 
 The following references support the concepts, terminology, and practices described in this document, drawn from classical literature and widely accepted sources in software engineering and system architecture:
 
-1. Evans, Eric.  *Domain-Driven Design: Tackling Complexity in the Heart of Software* . Addison-Wesley, 2003.
+1. Evans, Eric. _Domain-Driven Design: Tackling Complexity in the Heart of Software_. Addison-Wesley, 2003.
 
-   Foundational concepts for  **domain analysis** ,  **domain models** , and responsibility separation.
-2. Fowler, Martin.  *Patterns of Enterprise Application Architecture* . Addison-Wesley, 2002.
+   Foundational concepts for **domain analysis**, **domain models**, and responsibility separation.
 
-   Basis for  **Repository Pattern** ,  **Service Layer** , and layered organization.
+2. Fowler, Martin. _Patterns of Enterprise Application Architecture_. Addison-Wesley, 2002.
+
+   Basis for **Repository Pattern**, **Service Layer**, and layered organization.
+
 3. Fowler, Martin. “Layers”. martinfowler.com.
 
-   Classical reference on  **Layered Architecture** .
-4. Sommerville, Ian.  *Software Engineering* . Pearson, 10th Edition.
+   Classical reference on **Layered Architecture**.
 
-   Formal structure of the  **software engineering process** , including analysis, design, implementation, and testing.
-5. Elmasri, Ramez; Navathe, Shamkant.  *Fundamentals of Database Systems* . Pearson.
+4. Sommerville, Ian. _Software Engineering_. Pearson, 10th Edition.
+
+   Formal structure of the **software engineering process**, including analysis, design, implementation, and testing.
+
+5. Elmasri, Ramez; Navathe, Shamkant. _Fundamentals of Database Systems_. Pearson.
 
    Conceptual, logical, and physical **database modeling** foundations.
-6. PostgreSQL Global Development Group.  *PostgreSQL Documentation* .
 
-   Modern practices for  **constraints** ,  **referential integrity** , and database-enforced consistency.
-7. Gamma, Erich et al.  *Design Patterns: Elements of Reusable Object-Oriented Software* . Addison-Wesley.
+6. PostgreSQL Global Development Group. _PostgreSQL Documentation_.
+
+   Modern practices for **constraints**, **referential integrity**, and database-enforced consistency.
+
+7. Gamma, Erich et al. _Design Patterns: Elements of Reusable Object-Oriented Software_. Addison-Wesley.
 
    Structural patterns and responsibility separation in code.

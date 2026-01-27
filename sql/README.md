@@ -75,7 +75,7 @@ Database enforces invariants
 
 - **Patterns** are applied during modeling and design.
 - **Schema** is written _after_ design.
-- Once written, the schema becomes the **enforced contract** .
+- Once written, the schema becomes the **enforced contract**.
 
 ---
 

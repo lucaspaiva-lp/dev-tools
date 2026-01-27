@@ -53,7 +53,7 @@ Ignoring Files
 
     Global: ignored in all repositories (core.excludesfile)
 
-    Per repository: .gitignore file inside the project
+    Per repository:.gitignore file inside the project
 
 Local Repository
 Create and Inspect
@@ -65,7 +65,7 @@ git status # check file status
 
 git add file.txt # add specific file
 git add directory/ # add directory
-git add . # add all changes
+git add. # add all changes
 git add -f file.txt # force add ignored file
 
 ### Commit
