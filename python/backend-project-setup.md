@@ -10,8 +10,6 @@
 
 ## Step 1 — Enter the project directory
 
-<pre class="overflow-visible! px-0!" data-start="541" data-end="575"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"></div></pre>
-
 <pre class="overflow-visible! px-0!" data-start="541" data-end="575"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>cd</span><span> backend-clinica-api
 </span></span></code></div></div></pre>
 
@@ -22,8 +20,6 @@ Ensure you are at the **project root** (where `pyproject.toml` lives).
 ## Step 2 — Create a new virtual environment
 
 **Never reuse old virtual environments**
-
-<pre class="overflow-visible! px-0!" data-start="743" data-end="775"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"></div></pre>
 
 <pre class="overflow-visible! px-0!" data-start="743" data-end="775"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>python -m venv .venv
 </span></span></code></div></div></pre>
@@ -40,21 +36,15 @@ Reason:
 
 Linux (EndeavourOS):
 
-<pre class="overflow-visible! px-0!" data-start="943" data-end="980"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"></div></pre>
-
 <pre class="overflow-visible! px-0!" data-start="943" data-end="980"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>source</span><span> .venv/bin/activate
 </span></span></code></div></div></pre>
 
 Quick check:
 
-<pre class="overflow-visible! px-0!" data-start="996" data-end="1020"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"></div></pre>
-
 <pre class="overflow-visible! px-0!" data-start="996" data-end="1020"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>which</span><span> python
 </span></span></code></div></div></pre>
 
 Expected:
-
-<pre class="overflow-visible! px-0!" data-start="1032" data-end="1080"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"></div></pre>
 
 <pre class="overflow-visible! px-0!" data-start="1032" data-end="1080"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre!"><span><span>.../backend-clinica-api/.venv/bin/python
 </span></span></code></div></div></pre>
@@ -64,8 +54,6 @@ Expected:
 ## Step 4 — Verify `pyproject.toml` exists and is versioned
 
 Example (minimal working setup):
-
-<pre class="overflow-visible! px-0!" data-start="1182" data-end="1571"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"></div></pre>
 
 <pre class="overflow-visible! px-0!" data-start="1182" data-end="1571"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-toml"><span><span>[build-system]</span><span>
 </span><span>requires</span><span> = [</span><span>"setuptools"</span><span>]
@@ -102,21 +90,15 @@ Key points:
 
 Preferred (editable install for development):
 
-<pre class="overflow-visible! px-0!" data-start="1801" data-end="1829"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"></div></pre>
-
 <pre class="overflow-visible! px-0!" data-start="1801" data-end="1829"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>pip install -e .
 </span></span></code></div></div></pre>
 
 Alternative (non-editable):
 
-<pre class="overflow-visible! px-0!" data-start="1860" data-end="1885"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"></div></pre>
-
 <pre class="overflow-visible! px-0!" data-start="1860" data-end="1885"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>pip install .
 </span></span></code></div></div></pre>
 
 Quick verification:
-
-<pre class="overflow-visible! px-0!" data-start="1908" data-end="1928"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"></div></pre>
 
 <pre class="overflow-visible! px-0!" data-start="1908" data-end="1928"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>pip list
 </span></span></code></div></div></pre>
@@ -135,8 +117,6 @@ Confirm:
 
 In `src/main.py` (top of file):
 
-<pre class="overflow-visible! px-0!" data-start="2093" data-end="2151"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"></div></pre>
-
 <pre class="overflow-visible! px-0!" data-start="2093" data-end="2151"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-python"><span><span>from</span><span> dotenv </span><span>import</span><span> load_dotenv
 load_dotenv()
 </span></span></code></div></div></pre>
@@ -149,14 +129,10 @@ This **must execute before** reading environment variables.
 
 Create the file:
 
-<pre class="overflow-visible! px-0!" data-start="2275" data-end="2297"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"></div></pre>
-
 <pre class="overflow-visible! px-0!" data-start="2275" data-end="2297"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>touch</span><span> .</span><span>env</span><span>
 </span></span></code></div></div></pre>
 
 Manually type values (do not blindly copy):
-
-<pre class="overflow-visible! px-0!" data-start="2344" data-end="2425"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"></div></pre>
 
 <pre class="overflow-visible! px-0!" data-start="2344" data-end="2425"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-env"><span>DATABASE_URL=postgresql+psycopg2://postgres@localhost:5432/clinica_dev
 </span></code></div></div></pre>
@@ -165,14 +141,10 @@ Manually type values (do not blindly copy):
 
 ## Step 8 — Verify `.env` is being loaded
 
-<pre class="overflow-visible! px-0!" data-start="2475" data-end="2542"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"></div></pre>
-
 <pre class="overflow-visible! px-0!" data-start="2475" data-end="2542"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>python -c </span><span>"import os; print(os.getenv('DATABASE_URL'))"</span><span>
 </span></span></code></div></div></pre>
 
 Expected:
-
-<pre class="overflow-visible! px-0!" data-start="2554" data-end="2619"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"></div></pre>
 
 <pre class="overflow-visible! px-0!" data-start="2554" data-end="2619"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre!"><span><span>postgresql+psycopg2://postgres@localhost:5432/clinica_dev
 </span></span></code></div></div></pre>
@@ -187,14 +159,10 @@ If it prints `None`:
 
 ## Step 9 — Start the backend
 
-<pre class="overflow-visible! px-0!" data-start="2787" data-end="2840"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"></div></pre>
-
 <pre class="overflow-visible! px-0!" data-start="2787" data-end="2840"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>uvicorn src.main:app --reload --port 8001
 </span></span></code></div></div></pre>
 
 Expected:
-
-<pre class="overflow-visible! px-0!" data-start="2852" data-end="2900"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"></div></pre>
 
 <pre class="overflow-visible! px-0!" data-start="2852" data-end="2900"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre!"><span><span>Uvicorn</span><span> running </span><span>on</span><span> http://127.0.0.1:8001
 </span></span></code></div></div></pre>
@@ -213,8 +181,6 @@ Expected:
 
 - Add `python-dotenv` to `pyproject.toml`
 - Re-run:
-
-<pre class="overflow-visible! px-0!" data-start="3121" data-end="3149"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"></div></pre>
 
 <pre class="overflow-visible! px-0!" data-start="3121" data-end="3149"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>pip install -e .
 </span></span></code></div></div></pre>
@@ -246,8 +212,6 @@ Expected:
 
 - Correct `DATABASE_URL`:
 
-<pre class="overflow-visible! px-0!" data-start="3551" data-end="3632"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"></div></pre>
-
 <pre class="overflow-visible! px-0!" data-start="3551" data-end="3632"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-env"><span>DATABASE_URL=postgresql+psycopg2://postgres@localhost:5432/clinica_dev
 </span></code></div></div></pre>
 
@@ -263,14 +227,10 @@ Expected:
 
 - Verify file exists:
 
-<pre class="overflow-visible! px-0!" data-start="3777" data-end="3799"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"></div></pre>
-
 <pre class="overflow-visible! px-0!" data-start="3777" data-end="3799"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>ls</span><span> scripts
 </span></span></code></div></div></pre>
 
 - Execute with correct name:
-
-<pre class="overflow-visible! px-0!" data-start="3831" data-end="3899"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"></div></pre>
 
 <pre class="overflow-visible! px-0!" data-start="3831" data-end="3899"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>psql -U postgres -d clinica_dev -f scripts/reset_dev.sql
 </span></span></code></div></div></pre>
