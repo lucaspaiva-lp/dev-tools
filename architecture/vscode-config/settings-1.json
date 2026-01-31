@@ -1,0 +1,10 @@
+{
+  "sonarlint.exclude": [
+    "**/.venv/**",
+    "**/venv/**",
+    "**/.tox/**",
+    "**/site-packages/**",
+    "**/.vscode/**",
+    "**/typeshed-fallback/**"
+  ]
+}

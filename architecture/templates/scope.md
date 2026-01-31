@@ -36,7 +36,7 @@ The system is **not** responsible for:
 
 The system supports the following interactions:
 
-- A client submits a valid request and receives a successful response
+- A client submits a valid request and receives a successsful response
 - A client submits an invalid request and receives a validation error
 - A client requests an unsupported operation and receives a defined error response
 - An external system integrates via documented interfaces
