@@ -73,10 +73,20 @@ git add -f file.txt # force add ignored file
 git commit file.txt -m "commit message" # commit a specific file
 git commit -m "commit message" # commit all staged files
 
+#### Push
+
+git push
+
+- If it’s the main branch, this is enough.
+- If you’re on a new branch, first push with the branch name:
+  - git push -u origin my-branch-name
+
 ### Remove Files
 
 git rm file.txt
 git rm -r directory/
+
+git rm -r --cached 'pacote'
 
 ### Inspecting Changes (Diff)
 
