@@ -4,6 +4,8 @@
 
 touch {1..10}-32views.sql
 
+### **PACMAN**
+
 **Atualização do sistema**
 sudo pacman -Syu
 Atualiza a lista de repositórios e todos os pacotes instalados.
@@ -19,6 +21,17 @@ sudo pacman -Rns nome-do-pacote
 **Buscar pacotes**
 pacman -Ss nome
 pacman -Qs nome
+pacman -Q
+
+**After -Syu**
+
+pacman -Dk -> Check dependency issues
+pacman -Dkk -> More details
+
+pacman -Qk -> Verify installed package files
+
+systemctl --failed -> Check failed services (system health)
+
 
 **Tabela de sufixos/opções do pacman**
 
@@ -35,3 +48,7 @@ Essas letras não são comandos separados, são opções combináveis após o -.
 -Q Query Consulta pacotes instalados
 -S + s Search Busca pacotes nos repositórios
 -Q + s Search Busca pacotes instalados
+
+### FLATPAK
+
+flatpak list
