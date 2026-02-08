@@ -21,7 +21,7 @@ Ensure you are at the **project root** (where `pyproject.toml` lives).
 
 **Never reuse old virtual environments**
 
-<pre class="overflow-visible! px-0!" data-start="743" data-end="775"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>python -m venv .venv
+<pre class="overflow-visible! px-0!" data-start="743" data-end="775"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>python -m venv.venv
 </span></span></code></div></div></pre>
 
 Reason:
@@ -36,7 +36,7 @@ Reason:
 
 Linux (EndeavourOS):
 
-<pre class="overflow-visible! px-0!" data-start="943" data-end="980"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>source</span><span> .venv/bin/activate
+<pre class="overflow-visible! px-0!" data-start="943" data-end="980"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>source</span><span>.venv/bin/activate
 </span></span></code></div></div></pre>
 
 Quick check:
@@ -90,12 +90,12 @@ Key points:
 
 Preferred (editable install for development):
 
-<pre class="overflow-visible! px-0!" data-start="1801" data-end="1829"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>pip install -e .
+<pre class="overflow-visible! px-0!" data-start="1801" data-end="1829"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>pip install -e.
 </span></span></code></div></div></pre>
 
 Alternative (non-editable):
 
-<pre class="overflow-visible! px-0!" data-start="1860" data-end="1885"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>pip install .
+<pre class="overflow-visible! px-0!" data-start="1860" data-end="1885"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>pip install.
 </span></span></code></div></div></pre>
 
 Quick verification:
@@ -129,7 +129,7 @@ This **must execute before** reading environment variables.
 
 Create the file:
 
-<pre class="overflow-visible! px-0!" data-start="2275" data-end="2297"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>touch</span><span> .</span><span>env</span><span>
+<pre class="overflow-visible! px-0!" data-start="2275" data-end="2297"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>touch</span><span>.</span><span>env</span><span>
 </span></span></code></div></div></pre>
 
 Manually type values (do not blindly copy):
@@ -182,7 +182,7 @@ Expected:
 - Add `python-dotenv` to `pyproject.toml`
 - Re-run:
 
-<pre class="overflow-visible! px-0!" data-start="3121" data-end="3149"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>pip install -e .
+<pre class="overflow-visible! px-0!" data-start="3121" data-end="3149"><div class="contain-inline-size rounded-2xl corner-superellipse/1.1 relative bg-token-sidebar-surface-primary"><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>pip install -e.
 </span></span></code></div></div></pre>
 
 ---

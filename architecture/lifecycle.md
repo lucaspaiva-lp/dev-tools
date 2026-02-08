@@ -2,7 +2,7 @@
 
 ## Documentation-Oriented View (End-to-End)
 
-This model describes  **what must be documented, when, and why** , independent of technology choices (with or without database).
+This model describes  **what must be documented, when, and why**, independent of technology choices (with or without database).
 
 ---
 
@@ -10,7 +10,7 @@ This model describes  **what must be documented, when, and why** , independent o
 
 ### Goal
 
-Define  **why the system should exist** .
+Define  **why the system should exist**.
 
 ### Mandatory Documentation
 
@@ -35,7 +35,7 @@ All later decisions must align with this intent.
 
 ### Goal
 
-Define  **what the system will and will not do** .
+Define  **what the system will and will not do**.
 
 ### Mandatory Documentation
 
@@ -101,7 +101,7 @@ Refine decisions as certainty increases.
 
 ### Role in SDLC
 
-Creates  **engineering memory** .
+Creates  **engineering memory**.
 
 Critical for future evolution and review.
 

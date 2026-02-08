@@ -1,6 +1,6 @@
 | Command                                         | Explanation                                                    |
 | ----------------------------------------------- | -------------------------------------------------------------- |
-| `source .venv/bin/activate`                     | Activate the virtual environment (Linux/macOS)                 |
+| `source.venv/bin/activate`                     | Activate the virtual environment (Linux/macOS)                 |
 | `.venv\Scripts\activate`                        | Activate the virtual environment (Windows)                     |
 | `pip install package_name`                      | Install a specific package into the virtual environment        |
 | `pip install --upgrade package_name`            | Update a specific package to the latest version                |

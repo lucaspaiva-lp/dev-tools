@@ -1,5 +1,9 @@
 **Comandos básicos do pacman (Arch / EndeavourOS)**
 
+**Create Many Files**
+
+touch {1..10}-32views.sql
+
 **Atualização do sistema**
 sudo pacman -Syu
 Atualiza a lista de repositórios e todos os pacotes instalados.

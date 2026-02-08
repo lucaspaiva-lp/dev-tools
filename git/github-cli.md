@@ -15,7 +15,7 @@ gh config set -h github.com git_protocol ssh
 
 ## Repository Creation & Linking
 
-gh repo create <repo_name> --private --source . --push
+gh repo create <repo_name> --private --source. --push
 -> Create a new GitHub repository named <repo_name>, set visibility to private (use --public for public), use the current folder as source, and push existing local commits.
 
 gh repo create <repo_name> --public --add-readme
@@ -50,7 +50,7 @@ echo "# title" >> README.md
 git init
 -> Initialize a local Git repository in the current folder.
 
-git add .
+git add.
 -> Stage all files in the current folder for commit.
 
 git commit -m "Initial commit"
@@ -60,7 +60,7 @@ git commit -m "Initial commit"
 
 ## Notes / Tips
 
-- Use `--source .` when creating a repository from an **existing local folder**.
+- Use `--source.` when creating a repository from an **existing local folder**.
 - Use `--push` to immediately push local commits to the new GitHub repository.
 - Visibility can be controlled with `--private` or `--public`.
 - `gh auth status` is useful to ensure your CLI can interact with GitHub correctly, especially before creating or pushing repos.
@@ -124,7 +124,7 @@ You should see something like:
 
 ## Step 4: Stage Your Files
 
-`git add .`
+`git add.`
 
 ## Step 5: Commit Your Changes
 
@@ -132,8 +132,8 @@ You should see something like:
 
 ## Step 6: Create GitHub Repository and Push
 
-`gh repo create name_folder --private --source . --push`
+`gh repo create name_folder --private --source. --push`
 
 > Replace --private with --public if you want the repository to be public.
-> --source . uses the current folder as the repository source.
+> --source. uses the current folder as the repository source.
 > --push uploads your commits to GitHub immediately.

@@ -2,9 +2,9 @@
 
 ## Purpose
 
-This document explains the practical differences between **SQLite** and **server-based databases** (PostgreSQL / MySQL), focusing on **writes vs reads** and  **project suitability** .
+This document explains the practical differences between **SQLite** and **server-based databases** (PostgreSQL / MySQL), focusing on **writes vs reads** and  **project suitability**.
 
-The goal is to clarify  **when each database should be used** .
+The goal is to clarify  **when each database should be used**.
 
 ---
 
@@ -12,7 +12,7 @@ The goal is to clarify  **when each database should be used** .
 
 ### Read (Leitura)
 
-Operations that  **do not change data** .
+Operations that  **do not change data**.
 
 Examples:
 
@@ -33,7 +33,7 @@ SQL examples:
 
 ### Write (Escrita)
 
-Operations that  **modify data** .
+Operations that  **modify data**.
 
 Examples:
 
@@ -182,7 +182,7 @@ PostgreSQL / MySQL are ideal for:
 
 ## Architectural Takeaway
 
-SQLite is a  **starting point** , not a limitation.
+SQLite is a  **starting point**, not a limitation.
 
 A well-designed backend:
 
@@ -190,7 +190,7 @@ A well-designed backend:
 * Allows swapping SQLite → PostgreSQL later
 * Avoids coupling business rules to the database
 
-Using SQLite early is  **a design decision** , not a shortcut.
+Using SQLite early is  **a design decision**, not a shortcut.
 
 ---
 
