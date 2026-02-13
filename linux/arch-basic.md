@@ -4,6 +4,12 @@
 
 touch {1..10}-32views.sql
 
+**Rename Many Files**
+
+for i in {1..10}; do
+  mv "${i}-players.sql" "${i}.sql"
+done
+
 ### **PACMAN**
 
 **Atualização do sistema**
@@ -31,7 +37,6 @@ pacman -Dkk -> More details
 pacman -Qk -> Verify installed package files
 
 systemctl --failed -> Check failed services (system health)
-
 
 **Tabela de sufixos/opções do pacman**
 
