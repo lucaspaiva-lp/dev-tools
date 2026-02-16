@@ -59,9 +59,11 @@ sudo rkhunter --check
 ---
 
 ## Situação Ferramenta
+```
 Internet estranha -	nethogs / iftop
 Programa suspeito -	htop / ss
 Suspeita de malware	- clamav
 Suspeita de spyware persistente -	systemctl / cron
 Suspeita de rootkit	- rkhunter
 
+```
